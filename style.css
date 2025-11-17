@@ -26,27 +26,7 @@ body {
 
 .download-section {
   margin-top: 2rem;
-}
-
-.download-label {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-right: 0.5rem;
-}
-
-.download-dropdown {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  border: 2px solid #018BAA;
-  background-color: white;
-  color: #018BAA;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-}
-
-.download-dropdown:hover {
-  border-color: #016f88;
+  position: relative; /* needed for dropdown positioning */
 }
 
 .download-button {
@@ -58,11 +38,35 @@ body {
   font-weight: 700;
   border-radius: 0.5rem;
   cursor: pointer;
-  margin-left: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
+  background-color: #016f88;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  display: none; /* hidden by default */
+  position: absolute;
+  background-color: #018BAA;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
   background-color: #016f88;
 }
 
